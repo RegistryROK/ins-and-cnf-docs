@@ -56,5 +56,5 @@ sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 (Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock 에러 발생 시):
 
 ```zsh
-sudo chmod 666 /var/run/docker.sock
+sudo usermod -a -G docker registry
 ```
